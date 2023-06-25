@@ -21,8 +21,8 @@ public class ShopRepository {
     }
 
     public void remove(int id) {
-        Product remoedProduct = findById(id);
-        if (remoedProduct == null) {
+        Product removeProduct = findById(id);
+        if (removeProduct == null) {
             throw new NotFoundException(id);
         }
 
